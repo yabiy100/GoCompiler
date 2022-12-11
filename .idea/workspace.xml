@@ -4,43 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="24563cb7-6f02-4766-8edf-28fa65398775" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Parser.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vorlesung Antlr/BasicStruckture.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vorlesung Antlr/LexerGo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vorlesung Antlr/LexerGo.g4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vorlesung Antlr/LexerGo.interp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vorlesung Antlr/LexerGo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vorlesung Antlr/LexerGo.tokens" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vorlesung Antlr/ParserGo$SContext.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vorlesung Antlr/ParserGo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vorlesung Antlr/ParserGo.g4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vorlesung Antlr/ParserGo.interp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vorlesung Antlr/ParserGo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vorlesung Antlr/ParserGo.tokens" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vorlesung Antlr/ParserGoBaseListener.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vorlesung Antlr/ParserGoBaseListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vorlesung Antlr/ParserGoListener.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vorlesung Antlr/ParserGoListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vorlesung Antlr/ReadMe.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vorlesung Antlr/antlr-4.11.1-complete.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vorlesung Antlr/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gen/LexerGo.interp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gen/LexerGo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gen/LexerGo.tokens" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gen/ParserGo.interp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gen/ParserGo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gen/ParserGo.tokens" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gen/ParserGoBaseListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gen/ParserGoBaseVisitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gen/ParserGoListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gen/ParserGoVisitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    <list default="true" id="24563cb7-6f02-4766-8edf-28fa65398775" name="Changes" comment="Parse Basic file">
+      <change afterPath="$PROJECT_DIR$/Vorlesung Antlr/optWS.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vorlesung Antlr/LexerGo.g4" beforeDir="false" afterPath="$PROJECT_DIR$/Vorlesung Antlr/LexerGo.g4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vorlesung Antlr/LexerGo.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/Vorlesung Antlr/LexerGo.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vorlesung Antlr/ParserGo.g4" beforeDir="false" afterPath="$PROJECT_DIR$/Vorlesung Antlr/ParserGo.g4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/LexerGo.interp" beforeDir="false" afterPath="$PROJECT_DIR$/gen/LexerGo.interp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/LexerGo.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen/LexerGo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/LexerGo.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/gen/LexerGo.tokens" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,8 +60,18 @@
       <workItem from="1670514008768" duration="2105000" />
       <workItem from="1670526452642" duration="3571000" />
       <workItem from="1670586786964" duration="458000" />
-      <workItem from="1670686832936" duration="3633000" />
+      <workItem from="1670686832936" duration="6253000" />
+      <workItem from="1670702316612" duration="1289000" />
+      <workItem from="1670743875676" duration="405000" />
     </task>
+    <task id="LOCAL-00001" summary="Parse Basic file">
+      <created>1670691721243</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1670691721243</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -108,5 +90,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Parse Basic file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Parse Basic file" />
   </component>
 </project>

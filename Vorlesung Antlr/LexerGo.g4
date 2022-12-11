@@ -1,22 +1,23 @@
 lexer grammar LexerGo;
 
 //COMMENT: '/''/'.*? '\n';
-
-PACKAGE: 'package' WS;
-IMPORT: 'import'WS;
-IMPORTNAME: '"'IDENTIFIER'"';
-FUNC: 'func' WS;
-MAIN: 'main';
+WS: [ \t] -> skip;
+PACKAGE: 'package';
+IMPORT: 'import';
+IMPORTNAME: '"'([a-z][a-z_0-9]*)'"';
+FUNC: 'func' ;
+//MAIN: 'main';
 
 L_BRACKET: '{';
 R_BRACKET: '}' ;
 L_BRACE: '(';
-R_BRACE: ')'WS;
-COMMA: ','WS;
-WS: (' '|'\t') ;
-//WS: [ \t] -> skip;
+R_BRACE: ')';
+COMMA: ',';
+//WS: (' '|'\t') -> skip;
+//OPTWS: WS | WS OPTWS | '';
+
 //NEWLINE: ('\n'|'\n''\r');
-NEWLINE: '\n';
+NEWLINE: '\n' | '\r' | '\r\n';
 INT: [0-9]+;
 
 ADD: '+';

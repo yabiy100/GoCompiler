@@ -4,11 +4,11 @@ options{
 tokenVocab=LexerGo;
 }
 s :   package imports function;
-package: PACKAGE MAIN newLine;
+package: PACKAGE IDENTIFIER newLine;
 
-imports: IMPORT IMPORTNAME;
+imports: IMPORT IMPORTNAME newLine;
 
-function: FUNC MAIN L_BRACE params R_BRACE returnType L_BRACKET R_BRACKET function | ;
+function: FUNC IDENTIFIER L_BRACE params R_BRACE returnType L_BRACKET newLine R_BRACKET newLine function | ;
 
 params: IDENTIFIER TYPE | IDENTIFIER TYPE COMMA params |  ;
 
