@@ -1,0 +1,21 @@
+package main
+
+import "fmt" 
+
+func   main() {
+	var test boolean = true || false
+	var testing string = fmt.println()
+	var name string = fmt.add(Fib(5))
+	var method string = reflect.ValueOf(handler).MethodByName("GET")
+	var test boolean = true || false
+
+}
+
+/* MehrZeiliger Kommentar
+Dies ist ein mehrZeiliger Kommentar
+Immernoch Kommentar */
+
+func weber()
+{
+	var floty float64 = 0.9 + 0.9
+}

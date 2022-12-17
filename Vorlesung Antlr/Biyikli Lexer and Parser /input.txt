@@ -1,0 +1,21 @@
+package main
+
+import "fmt" //BASIC COMMENT
+
+func   main(students int,grades boolean,   test2 float64) {
+	var s string = "H allo"
+	var zahl int = 3 + 2 * 4 + 4 * ( 2 + 4)
+
+}
+
+/* MehrZeiliger Kommentar
+Dies ist ein mehrZeiliger Kommentar
+Immernoch Kommentar */
+
+func weber()
+{
+	var floty float64 = 0.9 + 0.9
+}
+
+Lukas.Lang@uni-duesseldorf.de CC: John.Witulski@uni-duesseldorf.de Betre:
+Abgabe CoBa Projekt Phase X - Name - MNR
