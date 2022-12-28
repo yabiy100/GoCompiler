@@ -5,7 +5,6 @@ COMMENT: '/''/'.*? '\n' -> skip;
 BIG_COMMENT: '/''*'.*? '*''/' -> skip;
 PACKAGE: 'package';
 IMPORT: 'import';
-//IMPORTNAME: '"'([A-Za-z][A-Za-z_0-9]*)'"';
 FUNC: 'func' ;
 
 L_BRACKET: '{';
@@ -15,6 +14,10 @@ R_BRACE: ')';
 COMMA: ',';
 POINT: '.';
 EQUALS: '=';
+
+IF: 'if';
+ELSE: 'else';
+RETURN: 'return';
 
 TYPE: 'int' | 'float64' | 'string' | 'boolean';
 NUMBER: INT | FLOAT64;
@@ -26,11 +29,10 @@ VAR: 'var';
 NEWLINE: '\n' | '\r' | '\r\n';
 
 
-ADD: '+' | '-';
 MULT: '*' | '/' | '%';
 NOT: '!';
-POSTIV: '+';
-NEGATIV: '-';
+PLUS: '+';
+MINUS: '-';
 COMPAIR: '!=' | '==' | '<' | '>' | '<=' | '>=';
 LOGICAL_AND: '&&';
 LOGICAL_OR: '||';

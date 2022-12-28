@@ -10,6 +10,7 @@ import org.antlr.v4.runtime.Lexer;
 import org.antlr.v4.runtime.tree.ParseTree;
 import org.antlr.v4.runtime.tree.ParseTreeWalker;
 
+//FILE -> PROJECT STRUCTURE
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -22,7 +23,8 @@ public class Main {
         Lexer lexer = new LexerGo(chars);
         CommonTokenStream tokens = new CommonTokenStream(lexer);
         ParserGo parser = new ParserGo(tokens);
-        System.out.println("Could parse the programm succesfully");
+        ParseTree tree = parser.s();
+        System.out.println("Parsing finished");
 
     }
 

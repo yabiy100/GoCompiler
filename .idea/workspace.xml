@@ -4,56 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="24563cb7-6f02-4766-8edf-28fa65398775" name="Changes" comment="Handle optional WS">
-      <change afterPath="$PROJECT_DIR$/Vorlesung Antlr/Biyikli Lexer and Parser /LexerGo.g4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vorlesung Antlr/Biyikli Lexer and Parser /Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vorlesung Antlr/Biyikli Lexer and Parser /ParserGo.g4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vorlesung Antlr/Biyikli Lexer and Parser /input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vorlesung Antlr/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vorlesung Antlr/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vorlesung Antlr/Method Call.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vorlesung Antlr/ParserGo$DeclarationContext.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vorlesung Antlr/ParserGo$ExprContext.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vorlesung Antlr/ParserGo$ExpressionContext.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vorlesung Antlr/ParserGo$FunctionBodyContext.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vorlesung Antlr/ParserGo$FunctionContext.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vorlesung Antlr/ParserGo$FunctionHeadContext.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vorlesung Antlr/ParserGo$ImportsContext.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vorlesung Antlr/ParserGo$NewLineContext.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vorlesung Antlr/ParserGo$OptNewLineContext.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vorlesung Antlr/ParserGo$PackageContext.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vorlesung Antlr/ParserGo$ParamsContext.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vorlesung Antlr/ParserGo$ReturnTypeContext.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vorlesung Antlr/ParserGo$UnaryContext.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vorlesung Antlr/basicExpressions.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vorlesung Antlr/LexerGo.class" beforeDir="false" afterPath="$PROJECT_DIR$/Vorlesung Antlr/LexerGo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vorlesung Antlr/LexerGo.g4" beforeDir="false" afterPath="$PROJECT_DIR$/Vorlesung Antlr/LexerGo.g4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vorlesung Antlr/LexerGo.interp" beforeDir="false" afterPath="$PROJECT_DIR$/Vorlesung Antlr/LexerGo.interp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vorlesung Antlr/LexerGo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Vorlesung Antlr/LexerGo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vorlesung Antlr/LexerGo.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/Vorlesung Antlr/LexerGo.tokens" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vorlesung Antlr/ParserGo$SContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/Vorlesung Antlr/ParserGo$SContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vorlesung Antlr/ParserGo.class" beforeDir="false" afterPath="$PROJECT_DIR$/Vorlesung Antlr/ParserGo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vorlesung Antlr/ParserGo.g4" beforeDir="false" afterPath="$PROJECT_DIR$/Vorlesung Antlr/ParserGo.g4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vorlesung Antlr/ParserGo.interp" beforeDir="false" afterPath="$PROJECT_DIR$/Vorlesung Antlr/ParserGo.interp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vorlesung Antlr/ParserGo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Vorlesung Antlr/ParserGo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vorlesung Antlr/ParserGo.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/Vorlesung Antlr/ParserGo.tokens" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vorlesung Antlr/ParserGoBaseListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/Vorlesung Antlr/ParserGoBaseListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vorlesung Antlr/ParserGoBaseListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/Vorlesung Antlr/ParserGoBaseListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vorlesung Antlr/ParserGoListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/Vorlesung Antlr/ParserGoListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vorlesung Antlr/ParserGoListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/Vorlesung Antlr/ParserGoListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vorlesung Antlr/input.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/LexerGo.interp" beforeDir="false" afterPath="$PROJECT_DIR$/gen/LexerGo.interp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/LexerGo.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen/LexerGo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/LexerGo.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/gen/LexerGo.tokens" afterDir="false" />
-    </list>
+    <list default="true" id="24563cb7-6f02-4766-8edf-28fa65398775" name="Changes" comment="Handle Varaible assignments" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+      <option value="module" />
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="true" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -66,20 +33,48 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "go.import.settings.migrated": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.3134796",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Parser" />
+      <option name="PROGRAM_PARAMETERS" value="MethodCall.go" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -98,7 +93,11 @@
       <workItem from="1670743875676" duration="9936000" />
       <workItem from="1671031921166" duration="2159000" />
       <workItem from="1671200764761" duration="223000" />
-      <workItem from="1671291112441" duration="5615000" />
+      <workItem from="1671291112441" duration="13197000" />
+      <workItem from="1671406431121" duration="2235000" />
+      <workItem from="1672073897636" duration="1943000" />
+      <workItem from="1672088142226" duration="753000" />
+      <workItem from="1672151656175" duration="2074000" />
     </task>
     <task id="LOCAL-00001" summary="Parse Basic file">
       <created>1670691721243</created>
@@ -114,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670744417214</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Handle Expressions">
+      <created>1671297896611</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1671297896611</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,6 +141,11 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Parse Basic file" />
     <MESSAGE value="Handle optional WS" />
-    <option name="LAST_COMMIT_MESSAGE" value="Handle optional WS" />
+    <MESSAGE value="Handle Expressions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Handle Expressions" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>false</integration-enabled>
+    <settings-migrated>true</settings-migrated>
   </component>
 </project>
