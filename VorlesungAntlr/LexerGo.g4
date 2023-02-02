@@ -17,9 +17,10 @@ EQUALS: '=';
 
 IF: 'if';
 ELSE: 'else';
+FOR: 'for';
 RETURN: 'return';
 
-TYPE: 'int' | 'float64' | 'string' | 'boolean';
+TYPE: 'int' | 'float64' | 'string' | 'bool';
 NUMBER: INT | FLOAT64;
 INT: [0-9]+;
 FLOAT64: [0-9]+ '.' [0-9]+;
@@ -36,7 +37,7 @@ MINUS: '-';
 COMPAIR: '!=' | '==' | '<' | '>' | '<=' | '>=';
 LOGICAL_AND: '&&';
 LOGICAL_OR: '||';
-BOOLEAN: 'true' | 'false';
+BOOL: 'true' | 'false';
 
 
 IDENTIFIER: ([A-Za-z][A-Za-z_0-9]*);

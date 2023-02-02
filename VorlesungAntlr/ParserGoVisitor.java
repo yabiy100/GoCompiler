@@ -94,12 +94,6 @@ public interface ParserGoVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitMethodParams(ParserGo.MethodParamsContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link ParserGo#param}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitParam(ParserGo.ParamContext ctx);
-	/**
 	 * Visit a parse tree produced by {@link ParserGo#expressions}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
@@ -123,6 +117,18 @@ public interface ParserGoVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitElse(ParserGo.ElseContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link ParserGo#bloc}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitBloc(ParserGo.BlocContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link ParserGo#for}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitFor(ParserGo.ForContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link ParserGo#return}.
 	 * @param ctx the parse tree

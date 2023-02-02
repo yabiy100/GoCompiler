@@ -1,6 +1,6 @@
 // UNIX:
 // java -jar antlr-4.11.1-complete.jar LexerGo.g4
-// java -jar antlr-4.11.1-complete.jar ParserGo.g4
+// java -jar antlr-4.11.1-complete.jar -visitor ParserGo.g4
 // javac -cp antlr-4.11.1-complete.jar *.java
 // java -classpath antlr-4.11.1-complete.jar:. Main input.txt
 import org.antlr.v4.runtime.CharStream;
@@ -8,7 +8,6 @@ import org.antlr.v4.runtime.CharStreams;
 import org.antlr.v4.runtime.CommonTokenStream;
 import org.antlr.v4.runtime.Lexer;
 import org.antlr.v4.runtime.tree.ParseTree;
-import org.antlr.v4.runtime.tree.ParseTreeWalker;
 
 //FILE -> PROJECT STRUCTURE
 import java.io.IOException;
@@ -24,6 +23,10 @@ public class Main {
         CommonTokenStream tokens = new CommonTokenStream(lexer);
         ParserGo parser = new ParserGo(tokens);
         ParseTree tree = parser.s();
+        Visitor visitor = new Visitor();
+        visitor.visit(tree);
+
+        System.out.println(visitor.getRoot().toString());
         System.out.println("Parsing finished");
 
     }

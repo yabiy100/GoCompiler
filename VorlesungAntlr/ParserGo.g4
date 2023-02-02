@@ -13,23 +13,25 @@ functionHead: FUNC IDENTIFIER L_BRACE params R_BRACE returnType;
 params: IDENTIFIER TYPE | IDENTIFIER TYPE COMMA params |  ;
 returnType: TYPE | ;
 
-functionBody: declaration expressions;
+functionBody: declaration expressions return;
 declaration: VAR IDENTIFIER TYPE EQUALS expr newLine declaration | ;
 expr:  unary | expr MULT expr | expr PLUS expr | expr MINUS expr | expr COMPAIR expr | expr LOGICAL_AND expr | expr LOGICAL_OR expr |
-    L_BRACE expr R_BRACE | NUMBER | BOOLEAN | STRING | IDENTIFIER| unary | methodCall;
+    L_BRACE expr R_BRACE | NUMBER | BOOL| STRING | IDENTIFIER| unary | methodCall;
 unary: NOT unaryExpr | PLUS NUMBER | MINUS NUMBER;
-unaryExpr: IDENTIFIER | BOOLEAN | L_BRACE expr R_BRACE;
+unaryExpr: IDENTIFIER | BOOL | L_BRACE expr R_BRACE;
 methodCall: IDENTIFIER L_BRACE methodParams R_BRACE methodCall | IDENTIFIER POINT IDENTIFIER L_BRACE methodParams R_BRACE methodCall
     | POINT IDENTIFIER L_BRACE methodParams R_BRACE methodCall |  ;
-methodParams: param | param COMMA param | ;
-param: methodCall | IDENTIFIER | STRING | NUMBER| BOOLEAN ;
+methodParams: expr | expr COMMA expr | ;
 
-expressions: variableAssignment newLine expressions | methodCall newLine expressions| if newLine expressions | return | ;
+expressions: variableAssignment newLine expressions | methodCall newLine expressions| if expressions
+    | bloc expressions | for newLine expressions| ;
 variableAssignment: IDENTIFIER EQUALS expr;
-if: IF expr L_BRACKET newLine expressions R_BRACKET optNewLine else;
-else: ELSE L_BRACKET expressions R_BRACKET | ;
+if: IF expr L_BRACKET newLine expressions return R_BRACKET optNewLine else optNewLine;
+else: ELSE L_BRACKET optNewLine expressions return R_BRACKET | ;
+bloc: L_BRACKET optNewLine expressions R_BRACKET optNewLine;
+for: FOR expr optNewLine L_BRACKET optNewLine expressions optNewLine R_BRACKET optNewLine;
 
-return: RETURN expr | ;
+return: RETURN newLine | RETURN expr newLine | ;
 
 newLine: NEWLINE | NEWLINE newLine ;
 optNewLine: NEWLINE | NEWLINE newLine | ;

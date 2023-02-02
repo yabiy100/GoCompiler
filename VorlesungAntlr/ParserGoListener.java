@@ -147,15 +147,75 @@ public interface ParserGoListener extends ParseTreeListener {
 	 */
 	void exitMethodParams(ParserGo.MethodParamsContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link ParserGo#param}.
+	 * Enter a parse tree produced by {@link ParserGo#expressions}.
 	 * @param ctx the parse tree
 	 */
-	void enterParam(ParserGo.ParamContext ctx);
+	void enterExpressions(ParserGo.ExpressionsContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link ParserGo#param}.
+	 * Exit a parse tree produced by {@link ParserGo#expressions}.
 	 * @param ctx the parse tree
 	 */
-	void exitParam(ParserGo.ParamContext ctx);
+	void exitExpressions(ParserGo.ExpressionsContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link ParserGo#variableAssignment}.
+	 * @param ctx the parse tree
+	 */
+	void enterVariableAssignment(ParserGo.VariableAssignmentContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link ParserGo#variableAssignment}.
+	 * @param ctx the parse tree
+	 */
+	void exitVariableAssignment(ParserGo.VariableAssignmentContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link ParserGo#if}.
+	 * @param ctx the parse tree
+	 */
+	void enterIf(ParserGo.IfContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link ParserGo#if}.
+	 * @param ctx the parse tree
+	 */
+	void exitIf(ParserGo.IfContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link ParserGo#else}.
+	 * @param ctx the parse tree
+	 */
+	void enterElse(ParserGo.ElseContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link ParserGo#else}.
+	 * @param ctx the parse tree
+	 */
+	void exitElse(ParserGo.ElseContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link ParserGo#bloc}.
+	 * @param ctx the parse tree
+	 */
+	void enterBloc(ParserGo.BlocContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link ParserGo#bloc}.
+	 * @param ctx the parse tree
+	 */
+	void exitBloc(ParserGo.BlocContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link ParserGo#for}.
+	 * @param ctx the parse tree
+	 */
+	void enterFor(ParserGo.ForContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link ParserGo#for}.
+	 * @param ctx the parse tree
+	 */
+	void exitFor(ParserGo.ForContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link ParserGo#return}.
+	 * @param ctx the parse tree
+	 */
+	void enterReturn(ParserGo.ReturnContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link ParserGo#return}.
+	 * @param ctx the parse tree
+	 */
+	void exitReturn(ParserGo.ReturnContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link ParserGo#newLine}.
 	 * @param ctx the parse tree

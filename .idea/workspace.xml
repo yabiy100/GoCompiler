@@ -4,7 +4,40 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="24563cb7-6f02-4766-8edf-28fa65398775" name="Changes" comment="Handle Varaible assignments" />
+    <list default="true" id="24563cb7-6f02-4766-8edf-28fa65398775" name="Changes" comment="create AST with ParseTree">
+      <change afterPath="$PROJECT_DIR$/Block and For.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FullProgramm.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VorlesungAntlr/ParserGoBaseVisitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VorlesungAntlr/ParserGoVisitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VorlesungAntlr/Visitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VorlesungAntlr/classes/Biyikli Comp Phase2 Freiversuch.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VorlesungAntlr/classes/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VorlesungAntlr/classes/NodeType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MethodCall.go" beforeDir="false" afterPath="$PROJECT_DIR$/MethodCall.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VorlesungAntlr/LexerGo.g4" beforeDir="false" afterPath="$PROJECT_DIR$/VorlesungAntlr/LexerGo.g4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VorlesungAntlr/LexerGo.interp" beforeDir="false" afterPath="$PROJECT_DIR$/VorlesungAntlr/LexerGo.interp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VorlesungAntlr/LexerGo.java" beforeDir="false" afterPath="$PROJECT_DIR$/VorlesungAntlr/LexerGo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VorlesungAntlr/LexerGo.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/VorlesungAntlr/LexerGo.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VorlesungAntlr/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/VorlesungAntlr/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VorlesungAntlr/ParserGo.g4" beforeDir="false" afterPath="$PROJECT_DIR$/VorlesungAntlr/ParserGo.g4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VorlesungAntlr/ParserGo.interp" beforeDir="false" afterPath="$PROJECT_DIR$/VorlesungAntlr/ParserGo.interp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VorlesungAntlr/ParserGo.java" beforeDir="false" afterPath="$PROJECT_DIR$/VorlesungAntlr/ParserGo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VorlesungAntlr/ParserGo.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/VorlesungAntlr/ParserGo.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VorlesungAntlr/ParserGoBaseListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/VorlesungAntlr/ParserGoBaseListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VorlesungAntlr/ParserGoListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/VorlesungAntlr/ParserGoListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/LexerGo.interp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/LexerGo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/LexerGo.tokens" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/ParserGo.interp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/ParserGo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/ParserGo.tokens" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/ParserGoBaseListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/ParserGoBaseVisitor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/ParserGoListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/ParserGoVisitor.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +47,14 @@
     <option name="groupingKeys">
       <option value="directory" />
       <option value="module" />
+    </option>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Enum" />
+      </list>
     </option>
   </component>
   <component name="Git.Settings">
@@ -33,29 +74,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "go.import.settings.migrated": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.3134796",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.3134796&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -64,7 +108,7 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Parser" />
-      <option name="PROGRAM_PARAMETERS" value="MethodCall.go" />
+      <option name="PROGRAM_PARAMETERS" value="FullProgramm.go" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -98,6 +142,25 @@
       <workItem from="1672073897636" duration="1943000" />
       <workItem from="1672088142226" duration="753000" />
       <workItem from="1672151656175" duration="2074000" />
+      <workItem from="1672236878703" duration="2465000" />
+      <workItem from="1672414342262" duration="1277000" />
+      <workItem from="1672758352254" duration="3783000" />
+      <workItem from="1672845541257" duration="5645000" />
+      <workItem from="1673278326081" duration="2126000" />
+      <workItem from="1674475728563" duration="859000" />
+      <workItem from="1674486215257" duration="3038000" />
+      <workItem from="1674582421392" duration="2163000" />
+      <workItem from="1674656984339" duration="4562000" />
+      <workItem from="1674735926480" duration="245000" />
+      <workItem from="1674736349932" duration="1718000" />
+      <workItem from="1674912737545" duration="4751000" />
+      <workItem from="1674922991415" duration="4291000" />
+      <workItem from="1674938644083" duration="1503000" />
+      <workItem from="1674997395918" duration="7673000" />
+      <workItem from="1675026110934" duration="1651000" />
+      <workItem from="1675166496332" duration="710000" />
+      <workItem from="1675175732250" duration="4147000" />
+      <workItem from="1675266410931" duration="6413000" />
     </task>
     <task id="LOCAL-00001" summary="Parse Basic file">
       <created>1670691721243</created>
@@ -120,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671297896611</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Handle Varaible assignments and if">
+      <created>1672236937738</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1672236937738</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,10 +212,24 @@
     <MESSAGE value="Parse Basic file" />
     <MESSAGE value="Handle optional WS" />
     <MESSAGE value="Handle Expressions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Handle Expressions" />
+    <MESSAGE value="Handle Varaible assignments and if" />
+    <MESSAGE value="finish grammar" />
+    <MESSAGE value="create AST with ParseTree" />
+    <option name="LAST_COMMIT_MESSAGE" value="create AST with ParseTree" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
     <settings-migrated>true</settings-migrated>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/VorlesungAntlr/Visitor.java</url>
+          <line>84</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

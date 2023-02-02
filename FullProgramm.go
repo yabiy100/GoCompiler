@@ -3,9 +3,10 @@ package main
 import "fmt"
 
 func   main(wheels int, manifacturesr string) string {
-	var test boolean = true || false
+	var test bool = true || false
 	var testing int = -5
-	var testing int =  6 > !one && true
+	var sarjan bool = -5 * 6 > 5 + 4 * 3 == true || false
+	var multBevor int =  6 + 2 * 3
 	var name string = fuction.add(Fib(5),reflect.ValueOf(handler).MethodByName("GET"))
 	methodCall = foo.bar().foo(param)
 	name = "String"
