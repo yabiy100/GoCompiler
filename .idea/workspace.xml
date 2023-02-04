@@ -4,39 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="24563cb7-6f02-4766-8edf-28fa65398775" name="Changes" comment="create AST with ParseTree">
-      <change afterPath="$PROJECT_DIR$/Block and For.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FullProgramm.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VorlesungAntlr/ParserGoBaseVisitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VorlesungAntlr/ParserGoVisitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VorlesungAntlr/Visitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VorlesungAntlr/classes/Biyikli Comp Phase2 Freiversuch.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VorlesungAntlr/classes/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VorlesungAntlr/classes/NodeType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="24563cb7-6f02-4766-8edf-28fa65398775" name="Changes" comment="parse simple expressions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MethodCall.go" beforeDir="false" afterPath="$PROJECT_DIR$/MethodCall.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VorlesungAntlr/LexerGo.g4" beforeDir="false" afterPath="$PROJECT_DIR$/VorlesungAntlr/LexerGo.g4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VorlesungAntlr/LexerGo.interp" beforeDir="false" afterPath="$PROJECT_DIR$/VorlesungAntlr/LexerGo.interp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VorlesungAntlr/LexerGo.java" beforeDir="false" afterPath="$PROJECT_DIR$/VorlesungAntlr/LexerGo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VorlesungAntlr/LexerGo.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/VorlesungAntlr/LexerGo.tokens" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VorlesungAntlr/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/VorlesungAntlr/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VorlesungAntlr/ParserGo.g4" beforeDir="false" afterPath="$PROJECT_DIR$/VorlesungAntlr/ParserGo.g4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VorlesungAntlr/ParserGo.interp" beforeDir="false" afterPath="$PROJECT_DIR$/VorlesungAntlr/ParserGo.interp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VorlesungAntlr/ParserGo.java" beforeDir="false" afterPath="$PROJECT_DIR$/VorlesungAntlr/ParserGo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VorlesungAntlr/ParserGo.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/VorlesungAntlr/ParserGo.tokens" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VorlesungAntlr/ParserGoBaseListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/VorlesungAntlr/ParserGoBaseListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VorlesungAntlr/ParserGoListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/VorlesungAntlr/ParserGoListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/LexerGo.interp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/LexerGo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/LexerGo.tokens" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/ParserGo.interp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/ParserGo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/ParserGo.tokens" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/ParserGoBaseListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/ParserGoBaseVisitor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/ParserGoListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/ParserGoVisitor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FullProgramm.go" beforeDir="false" afterPath="$PROJECT_DIR$/FullProgramm.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VorlesungAntlr/Visitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/VorlesungAntlr/Visitor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +131,11 @@
       <workItem from="1675026110934" duration="1651000" />
       <workItem from="1675166496332" duration="710000" />
       <workItem from="1675175732250" duration="4147000" />
-      <workItem from="1675266410931" duration="6413000" />
+      <workItem from="1675266410931" duration="7177000" />
+      <workItem from="1675352791662" duration="3662000" />
+      <workItem from="1675440488498" duration="5562000" />
+      <workItem from="1675529898248" duration="152000" />
+      <workItem from="1675530497227" duration="1059000" />
     </task>
     <task id="LOCAL-00001" summary="Parse Basic file">
       <created>1670691721243</created>
@@ -190,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672236937738</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="parse simple expressions">
+      <created>1675346215177</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1675346215177</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,7 +197,8 @@
     <MESSAGE value="Handle Varaible assignments and if" />
     <MESSAGE value="finish grammar" />
     <MESSAGE value="create AST with ParseTree" />
-    <option name="LAST_COMMIT_MESSAGE" value="create AST with ParseTree" />
+    <MESSAGE value="parse simple expressions" />
+    <option name="LAST_COMMIT_MESSAGE" value="parse simple expressions" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
@@ -226,8 +209,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/VorlesungAntlr/Visitor.java</url>
-          <line>84</line>
-          <option name="timeStamp" value="2" />
+          <line>106</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

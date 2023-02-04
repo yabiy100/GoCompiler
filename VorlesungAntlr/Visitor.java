@@ -52,12 +52,31 @@ public class Visitor extends ParserGoBaseVisitor<Node> {
         String identifier = declarationNode.IDENTIFIER().getText();
         Node ident = new Node(identifier, getNodetype(identifier));
         if(declarationNode.expr().getChildCount() == 1){
-            String declarationText = declarationNode.expr().getChild(0).getText();
-            Node declaration = new Node(declarationText,getNodetype(declarationText));
-            ident.setChildren(List.of(declaration));
-            declarations.add(ident);
+            if(declarationNode.expr().getChild(0).getChildCount() == 2){
+                String lowerText = declarationNode.expr().getChild(0).getChild(1).getText(); //right child of unary (number)
+                Node lower = new Node(lowerText, getNodetype(lowerText));
+                String rootText = declarationNode.expr().getChild(0).getChild(0).getText();//left child of unary (operator)
+                ident.setChildren(List.of(new Node(rootText, getNodetype(rootText), List.of(lower))));
+                declarations.add(ident);
+            }else {
+                String declarationText = declarationNode.expr().getChild(0).getText();
+                Node declaration = new Node(declarationText, getNodetype(declarationText));
+                ident.setChildren(List.of(declaration));
+                declarations.add(ident);
+            }
         }
         if(declarationNode.expr().getChildCount() == 3){
+            if(declarationNode.expr().getChild(0).getText().equals("(")){
+                if(declarationNode.expr().expr(0).getChildCount() == 3){
+                    String declarationText = declarationNode.expr().expr(0).getChild(1).getText();
+                    Node declaration = new Node(declarationText,getNodetype(declarationText));
+                    Node leftchild = getExpression(declarationNode.expr().expr(0).getChild(0));
+                    Node rightchild = getExpression(declarationNode.expr().expr(0).getChild(2));
+                    declaration.setChildren(List.of(leftchild, rightchild));
+                    ident.setChildren(List.of(declaration));
+                    declarations.add(ident);
+                }
+            }
             String declarationText = declarationNode.expr().getChild(1).getText();
             Node declaration = new Node(declarationText,getNodetype(declarationText));
             Node leftchild = getExpression(declarationNode.expr().getChild(0));
@@ -74,9 +93,31 @@ public class Visitor extends ParserGoBaseVisitor<Node> {
 
     private Node getExpression(ParseTree child) {
         if(child.getChildCount() == 1){
+            String unary = child.getChild(0).getText();
+            if(child.getChild(0).getChildCount() == 2){
+                String lowerText = child.getChild(0).getChild(1).getText(); //right child of unary (number)
+                Node lower = new Node(lowerText, getNodetype(lowerText));
+                String rootText = child.getChild(0).getChild(0).getText();//left child of unary (operator)
+                return new Node(rootText, getNodetype(rootText), List.of(lower));
+            }
             return new Node(child.getChild(0).getText(), getNodetype(child.getChild(0).getText()));
         }
-        //ParseTree child = child.getChild(4).getChild(0).getChild(4);
+        if(child.getChild(0).getText().equals("(") || child.getChild(2).getText().equals(")")){
+            // wenn langer ausdruch in Klammern
+            if(child.getChild(1).getChild(2) != null) {
+                String rootText = child.getChild(1).getChild(1).getText(); //operator
+                Node root = new Node(rootText, getNodetype(rootText));
+                Node leftchild = getExpression(child.getChild(1).getChild(0));
+                Node rightchild = getExpression(child.getChild(1).getChild(2));
+                root.setChildren(List.of(leftchild, rightchild));
+                return root;
+            }
+            //                           expr ->      unary->         6
+            String lowerText = child.getChild(1).getChild(0).getChild(1).getText();
+            Node lower = new Node(lowerText, getNodetype(lowerText));
+            String rootText = child.getChild(1).getChild(0).getChild(0).getText(); // -
+            return new Node(rootText, getNodetype(rootText), List.of(lower));
+        }
         Node root = new Node(child.getChild(1).getText(), getNodetype(child.getChild(1).getText()));
         Node leftchild = getExpression(child.getChild(0));
         Node rightchild = getExpression(child.getChild(2));
