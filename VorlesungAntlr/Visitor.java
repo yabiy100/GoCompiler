@@ -245,8 +245,8 @@ public class Visitor extends ParserGoBaseVisitor<Node> {
             return NodeType.NUMBER;
         }
         return switch (text) {
-            case "-", "+" -> NodeType.NUMBER;
-            case "&&", "||", "bool" -> NodeType.BOOL;
+            case "-", "+", "*", "/", "%" -> NodeType.NUMBER;
+            case "true", "false" ,"&&", "||", "bool", "==", ">", "<", ">=", "<=", "!=","!" -> NodeType.BOOL;
             case "int" -> NodeType.NUMBER;
             case "float64" -> NodeType.NUMBER;
             case "string" -> NodeType.STRING;

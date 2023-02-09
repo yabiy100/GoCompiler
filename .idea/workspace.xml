@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="24563cb7-6f02-4766-8edf-28fa65398775" name="Changes" comment="finish nested if">
-      <change afterPath="$PROJECT_DIR$/VorlesungAntlr/TypeChecker.java" afterDir="false" />
+    <list default="true" id="24563cb7-6f02-4766-8edf-28fa65398775" name="Changes" comment="finish basic typechecking. declaration and simple expression that only assign one value get checked">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FullProgramm.go" beforeDir="false" afterPath="$PROJECT_DIR$/FullProgramm.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VorlesungAntlr/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/VorlesungAntlr/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VorlesungAntlr/TypeChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/VorlesungAntlr/TypeChecker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VorlesungAntlr/Visitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/VorlesungAntlr/Visitor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VorlesungAntlr/classes/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/VorlesungAntlr/classes/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VorlesungAntlr/classes/NodeType.java" beforeDir="false" afterPath="$PROJECT_DIR$/VorlesungAntlr/classes/NodeType.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +143,7 @@
       <workItem from="1675856942046" duration="7833000" />
       <workItem from="1675870882311" duration="8089000" />
       <workItem from="1675885034211" duration="3151000" />
-      <workItem from="1675941296970" duration="10596000" />
+      <workItem from="1675941296970" duration="14849000" />
     </task>
     <task id="LOCAL-00001" summary="Parse Basic file">
       <created>1670691721243</created>
@@ -196,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675942192966</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="finish basic typechecking. declaration and simple expression that only assign one value get checked">
+      <created>1675953260297</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1675953260297</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,7 +229,8 @@
     <MESSAGE value="parse simple expressions" />
     <MESSAGE value="parantasis around single expression" />
     <MESSAGE value="finish nested if" />
-    <option name="LAST_COMMIT_MESSAGE" value="finish nested if" />
+    <MESSAGE value="finish basic typechecking. declaration and simple expression that only assign one value get checked" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish basic typechecking. declaration and simple expression that only assign one value get checked" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
@@ -235,8 +241,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/VorlesungAntlr/TypeChecker.java</url>
-          <line>51</line>
-          <option name="timeStamp" value="7" />
+          <line>54</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

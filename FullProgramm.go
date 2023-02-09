@@ -10,22 +10,22 @@ func   main(wheels int, manifacturesr string) string {
             	var multBevor int =  10 + 1 * 3 + weber(10)
     	//var name string = fuction.add(Fib(5),reflect.ValueOf(handler).MethodByName("GET"))
     	testing = 3 + 2 * 4
-        sarjan = 3 + 2
+        //sarjan = false
 
-    	noname = "name"
+    	//noname = "name"
 
-    	if 2==2 {
-    	 sarjan = 123 * 3
+    	if 2 == 2 {
+    	 sarjan = true
     	 return sarjan
 
     	}
-
     	if true {
-    	    yasin = true && false
-    	}else {
-    	    Josi = does.not().love().me()
-    	}
-    	return "tom"
+             	    yasin = true && false
+             	}else {
+             	    Josi = does.not().love().me()
+             	}
+
+        return "tom"
 
 
 

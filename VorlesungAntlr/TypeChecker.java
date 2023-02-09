@@ -3,6 +3,7 @@ import classes.NodeType;
 
 import java.sql.SQLOutput;
 import java.util.HashMap;
+import java.util.List;
 
 public class TypeChecker {
     Node AST;
@@ -38,14 +39,36 @@ public class TypeChecker {
     }
 
     private void visitExpression(Node expression) {
+        Visitor typeGiver = new Visitor();
         if(expression.getType() == NodeType.IF){
-            return;
+            NodeType conditionType = typeGiver.getNodetype(expression.getChild(0).getChild(0).getValue());
+            if(conditionType != NodeType.BOOL){
+                System.err.println("If condition: " + expression.getChild(0).getChild(0).toString() + "is not a boolean");
+            }
+            if(expression.getChild(1).getChild(0) == null){
+                System.err.println("If clause is empty");
+                return;
+            }
+            for (Node expr: expression.getChild(1).getChildren()){
+                visitExpression(expr);
+            }
+            if(expression.getChildcount() == 3) {
+                if(expression.getChild(2).getValue() == "return"){
+                    return;
+                }//if its an else
+                for (Node expr: expression.getChild(2).getChildren()){
+                    visitExpression(expr);
+                }
+                return;
+            }//expression.getCHildcount() == 4
+            for (Node expr: expression.getChild(3).getChildren()){
+                visitExpression(expr);
+            }
         }
         if(expression.getType() == null){
             System.err.println("Variable: " + expression.getValue() + " is not previously declared");
             return;
         }
-        Visitor typeGiver = new Visitor();
         NodeType decType = typeGiver.getNodetype(expression.getChild(0).getValue());
         NodeType expressionType = expression.getType();
         String name = expression.getValue();

@@ -66,6 +66,9 @@ public class Node {
         return type;
     }
 
+    public int getChildcount() {
+        return children.size();
+    }
     public String toString() {
         StringBuilder buffer = new StringBuilder(500000);
         print(buffer, "", "");
