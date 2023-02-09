@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func   main(wheels int, manifacturesr string) string {
+func   main() string {
         var test int = 3 + 2
             	var test bool = true || false
             	var testing int = -5

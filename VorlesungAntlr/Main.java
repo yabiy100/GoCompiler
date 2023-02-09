@@ -10,13 +10,16 @@ import org.antlr.v4.runtime.Lexer;
 import org.antlr.v4.runtime.tree.ParseTree;
 
 //FILE -> PROJECT STRUCTURE
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException, UnsupportedEncodingException {
         String input = readFile(args[0]);
         CharStream chars = CharStreams.fromString(input);
         Lexer lexer = new LexerGo(chars);
@@ -31,6 +34,11 @@ public class Main {
 
         System.out.println(visitor.getRoot().toString());
         System.out.println("Parsing finished");
+
+        PrintWriter writer = new PrintWriter("test.j", "UTF-8");
+        writer.println("The first line");
+        writer.println("The second line");
+        writer.close();
 
     }
 
