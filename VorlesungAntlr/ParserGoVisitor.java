@@ -82,24 +82,6 @@ public interface ParserGoVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitUnaryExpr(ParserGo.UnaryExprContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link ParserGo#methodCall}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitMethodCall(ParserGo.MethodCallContext ctx);
-	/**
-	 * Visit a parse tree produced by {@link ParserGo#methodParams}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitMethodParams(ParserGo.MethodParamsContext ctx);
-	/**
-	 * Visit a parse tree produced by {@link ParserGo#expressions}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitExpressions(ParserGo.ExpressionsContext ctx);
-	/**
 	 * Visit a parse tree produced by {@link ParserGo#variableAssignment}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
@@ -147,4 +129,28 @@ public interface ParserGoVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitOptNewLine(ParserGo.OptNewLineContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link ParserGo#expressions}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitExpressions(ParserGo.ExpressionsContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link ParserGo#methodCall}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitMethodCall(ParserGo.MethodCallContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link ParserGo#methodCallend}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitMethodCallend(ParserGo.MethodCallendContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link ParserGo#methodParams}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitMethodParams(ParserGo.MethodParamsContext ctx);
 }

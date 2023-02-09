@@ -38,6 +38,10 @@ public class Node {
         this.children = children;
     }
 
+    public void addChild(Node child){
+        this.children.add(child);
+    }
+
     public void setValue(String value) {
         this.value = value;
     }

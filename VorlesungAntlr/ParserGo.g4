@@ -16,15 +16,10 @@ returnType: TYPE | ;
 functionBody: declaration expressions return;
 declaration: VAR IDENTIFIER TYPE EQUALS expr newLine declaration | ;
 expr:  unary | expr MULT expr | expr PLUS expr | expr MINUS expr | expr COMPAIR expr | expr LOGICAL_AND expr | expr LOGICAL_OR expr |
-    L_BRACE expr R_BRACE | NUMBER | BOOL| STRING | IDENTIFIER| unary | methodCall;
+    L_BRACE expr R_BRACE | NUMBER | BOOL| STRING | IDENTIFIER| unary | methodCall | ;
 unary: NOT unaryExpr | PLUS NUMBER | MINUS NUMBER;
 unaryExpr: IDENTIFIER | BOOL | L_BRACE expr R_BRACE;
-methodCall: IDENTIFIER L_BRACE methodParams R_BRACE methodCall | IDENTIFIER POINT IDENTIFIER L_BRACE methodParams R_BRACE methodCall
-    | POINT IDENTIFIER L_BRACE methodParams R_BRACE methodCall |  ;
-methodParams: expr | expr COMMA expr | ;
 
-expressions: variableAssignment newLine expressions | methodCall newLine expressions| if expressions
-    | bloc expressions | for newLine expressions| ;
 variableAssignment: IDENTIFIER EQUALS expr;
 if: IF expr L_BRACKET newLine expressions return R_BRACKET optNewLine else optNewLine;
 else: ELSE L_BRACKET optNewLine expressions return R_BRACKET | ;
@@ -35,3 +30,12 @@ return: RETURN newLine | RETURN expr newLine | ;
 
 newLine: NEWLINE | NEWLINE newLine ;
 optNewLine: NEWLINE | NEWLINE newLine | ;
+
+expressions: variableAssignment newLine expressions | methodCall newLine expressions| if expressions
+    | bloc expressions | for newLine expressions| ;
+methodCall: IDENTIFIER L_BRACE methodParams R_BRACE methodCallend | IDENTIFIER POINT IDENTIFIER L_BRACE methodParams R_BRACE methodCallend
+    | POINT IDENTIFIER L_BRACE methodParams R_BRACE methodCallend;
+methodCallend: IDENTIFIER L_BRACE methodParams R_BRACE methodCallend | IDENTIFIER POINT IDENTIFIER L_BRACE methodParams R_BRACE methodCallend
+                   | POINT IDENTIFIER L_BRACE methodParams R_BRACE methodCallend | ;
+methodParams: expr | expr COMMA expr | ;
+

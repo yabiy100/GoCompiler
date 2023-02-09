@@ -3,12 +3,13 @@ package main
 import "fmt" 
 
 func   main() {
-	var test boolean =  true || false
+	var test bool =  true || false
 	var testing int = -5 
 	var testing int =  6 > !one && true 
 	var name string = fmt.add(Fib(5),reflect.ValueOf(handler).MethodByName("GET"))
 	var methodCall string = foo.bar().foo(param)
-
+	testing = 2
+	foo.Bar()
 }
 
 /* MehrZeiliger Kommentar

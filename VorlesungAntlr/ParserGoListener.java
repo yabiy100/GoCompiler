@@ -127,36 +127,6 @@ public interface ParserGoListener extends ParseTreeListener {
 	 */
 	void exitUnaryExpr(ParserGo.UnaryExprContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link ParserGo#methodCall}.
-	 * @param ctx the parse tree
-	 */
-	void enterMethodCall(ParserGo.MethodCallContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link ParserGo#methodCall}.
-	 * @param ctx the parse tree
-	 */
-	void exitMethodCall(ParserGo.MethodCallContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link ParserGo#methodParams}.
-	 * @param ctx the parse tree
-	 */
-	void enterMethodParams(ParserGo.MethodParamsContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link ParserGo#methodParams}.
-	 * @param ctx the parse tree
-	 */
-	void exitMethodParams(ParserGo.MethodParamsContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link ParserGo#expressions}.
-	 * @param ctx the parse tree
-	 */
-	void enterExpressions(ParserGo.ExpressionsContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link ParserGo#expressions}.
-	 * @param ctx the parse tree
-	 */
-	void exitExpressions(ParserGo.ExpressionsContext ctx);
-	/**
 	 * Enter a parse tree produced by {@link ParserGo#variableAssignment}.
 	 * @param ctx the parse tree
 	 */
@@ -236,4 +206,44 @@ public interface ParserGoListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitOptNewLine(ParserGo.OptNewLineContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link ParserGo#expressions}.
+	 * @param ctx the parse tree
+	 */
+	void enterExpressions(ParserGo.ExpressionsContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link ParserGo#expressions}.
+	 * @param ctx the parse tree
+	 */
+	void exitExpressions(ParserGo.ExpressionsContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link ParserGo#methodCall}.
+	 * @param ctx the parse tree
+	 */
+	void enterMethodCall(ParserGo.MethodCallContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link ParserGo#methodCall}.
+	 * @param ctx the parse tree
+	 */
+	void exitMethodCall(ParserGo.MethodCallContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link ParserGo#methodCallend}.
+	 * @param ctx the parse tree
+	 */
+	void enterMethodCallend(ParserGo.MethodCallendContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link ParserGo#methodCallend}.
+	 * @param ctx the parse tree
+	 */
+	void exitMethodCallend(ParserGo.MethodCallendContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link ParserGo#methodParams}.
+	 * @param ctx the parse tree
+	 */
+	void enterMethodParams(ParserGo.MethodParamsContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link ParserGo#methodParams}.
+	 * @param ctx the parse tree
+	 */
+	void exitMethodParams(ParserGo.MethodParamsContext ctx);
 }
