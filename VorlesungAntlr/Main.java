@@ -35,7 +35,9 @@ public class Main {
         System.out.println(visitor.getRoot().toString());
         System.out.println("Parsing finished");
 
-        PrintWriter writer = new PrintWriter("test.j", "UTF-8");
+        String filename = args[0];
+        filename = filename.substring(0, filename.lastIndexOf('.'));
+        PrintWriter writer = new PrintWriter(filename + ".j", "UTF-8");
         writer.println("The first line");
         writer.println("The second line");
         writer.close();

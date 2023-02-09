@@ -101,8 +101,16 @@ public class Visitor extends ParserGoBaseVisitor<Node> {
             if (expressionNode.expressions().getChild(0) != null) {
                 expressions.addAll(getExpressions(expressionNode.expressions()));
             }
-        }
 
+        }
+        //method call
+        if(expressionNode.methodCall() != null){
+            String identifier = expressionNode.methodCall().getText();
+            expressions.add(new Node(identifier, NodeType.METHODCALL));
+            if (expressionNode.expressions().getChild(0) != null) {
+                expressions.addAll(getExpressions(expressionNode.expressions()));
+            }
+        }
 
         return expressions;
     }

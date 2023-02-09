@@ -20,18 +20,18 @@ public class TypeChecker {
     }
 
     private void visit(Node function) {
-        if(function.getChild(1).getType() != function.getChild(4).getType()){
+        if(function.getChildcount() == 5 && function.getChild(1).getType() != function.getChild(4).getType()){
             System.err.println("Type " + function.getChild(1).getType() + " of function: " + function.getValue()+
                     " is not same as provited return value because its:" + function.getChild(4).getType());
         }
         //test declarations
-        if(function.getChild(2).getChild(0) != null){
+        if(function.getChild(2).getChildcount() != 0){
             for (Node declaration: function.getChild(2).getChildren()){
                 visitDec(declaration);
             }
         }
         //test expressions
-        if(function.getChild(3).getChild(0) != null){
+        if(function.getChild(3).getChildcount() != 0){
             for (Node expression: function.getChild(3).getChildren()){
                 visitExpression(expression);
             }
@@ -67,6 +67,9 @@ public class TypeChecker {
         }
         if(expression.getType() == null){
             System.err.println("Variable: " + expression.getValue() + " is not previously declared");
+            return;
+        }
+        if(expression.getType() == NodeType.METHODCALL){
             return;
         }
         NodeType decType = typeGiver.getNodetype(expression.getChild(0).getValue());
