@@ -26,6 +26,9 @@ public class Main {
         Visitor visitor = new Visitor();
         visitor.visit(tree);
 
+        TypeChecker checker = new TypeChecker(visitor.getRoot());
+        checker.check();
+
         System.out.println(visitor.getRoot().toString());
         System.out.println("Parsing finished");
 

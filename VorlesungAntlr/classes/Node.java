@@ -7,6 +7,7 @@ import java.util.Iterator;
 import java.util.List;
 
 public class Node {
+
     List<Node> children = new ArrayList<>();
     String value = "";
     NodeType type;
@@ -48,6 +49,21 @@ public class Node {
 
     public void setType(NodeType type) {
         this.type = type;
+    }
+
+    public String getValue() {
+        return value;
+    }
+
+    public List<Node> getChildren() {
+        return children;
+    }
+    public Node getChild(int number){
+        return children.get(number);
+    }
+
+    public NodeType getType() {
+        return type;
     }
 
     public String toString() {

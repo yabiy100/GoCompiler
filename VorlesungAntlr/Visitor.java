@@ -3,11 +3,13 @@ import classes.NodeType;
 import org.antlr.v4.runtime.tree.ParseTree;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 
 public class Visitor extends ParserGoBaseVisitor<Node> {
     private Node root = new Node();
+    HashMap<String, NodeType> variableTypes = new HashMap<>();;
 
     @Override
     public Node visitS(ParserGo.SContext ctx) {
@@ -55,6 +57,8 @@ public class Visitor extends ParserGoBaseVisitor<Node> {
         if(functionContext.functionBody().return_().getChild(0) != null){
             Node returnNode = new Node("return");
             returnNode.setChildren(List.of(getExpr(functionContext.functionBody().return_().expr())));
+            Node test = returnNode.getChild(0);
+            returnNode.setType(getNodetype(returnNode.getChild(0).getValue()));
             return List.of(params, returnType, declarations, expressions,returnNode);
         }
         return List.of(params, returnType, declarations, expressions);
@@ -65,19 +69,25 @@ public class Visitor extends ParserGoBaseVisitor<Node> {
         //varibale assigment
         if(expressionNode.variableAssignment() != null) {
             String identifier = expressionNode.variableAssignment().IDENTIFIER().getText();
-            Node ident = new Node(identifier);
+            Node ident = new Node(identifier, variableTypes.get(identifier));
             return recursiveExpr(expressionNode, expressions, ident);
         }
         //if
         if(expressionNode.if_() != null) {
             //if case
-            Node ifClause = new Node("if", NodeType.BOOL);
+            Node ifClause = new Node("if", NodeType.IF);
             Node condition = new Node("condition");
             condition.setChildren(List.of(getExpr(expressionNode.if_().expr())));
             Node body = new Node("body");
             body.setChildren(getExpressions(expressionNode.if_().expressions()));
             ifClause.addChild(condition);
             ifClause.addChild(body);
+            if(expressionNode.if_().return_().getChild(0) != null){
+                Node returnClause = new Node("return");
+                returnClause.setChildren(List.of(getExpr(expressionNode.if_().return_().expr())));
+                ifClause.addChild(returnClause);
+            }
+            expressions.add(ifClause);
             if(expressionNode.if_().else_().getChild(0) != null) {
                 Node elseClause = new Node("else", NodeType.FUNCTION);
                 elseClause.setChildren(getExpressions(expressionNode.if_().else_().expressions()));
@@ -88,12 +98,6 @@ public class Visitor extends ParserGoBaseVisitor<Node> {
                 }
                 ifClause.addChild(elseClause);
             }
-            if(expressionNode.if_().return_().getChild(0) != null){
-                Node returnClause = new Node("return");
-                returnClause.setChildren(List.of(getExpr(expressionNode.if_().return_().expr())));
-                ifClause.addChild(returnClause);
-            }
-            expressions.add(ifClause);
             if (expressionNode.expressions().getChild(0) != null) {
                 expressions.addAll(getExpressions(expressionNode.expressions()));
             }
@@ -144,10 +148,11 @@ public class Visitor extends ParserGoBaseVisitor<Node> {
         expressions.add(ident);
     }
 
-    private List<Node> getDeclarations(ParserGo.DeclarationContext declarationNode) { //child = function
+    private List<Node> getDeclarations(ParserGo.DeclarationContext declarationNode) {
         List<Node> declarations = new ArrayList<>();
         String identifier = declarationNode.IDENTIFIER().getText();
-        Node ident = new Node(identifier, getNodetype(identifier));
+        Node ident = new Node(identifier, getNodetype(declarationNode.getChild(2).getText()));
+        variableTypes.put(identifier,getNodetype(declarationNode.getChild(2).getText()) );
         if(declarationNode.expr().getChildCount() == 1){
             if(declarationNode.expr().getChild(0).getChildCount() == 2){
                 String lowerText = declarationNode.expr().getChild(0).getChild(1).getText(); //right child of unary (number)
@@ -242,10 +247,10 @@ public class Visitor extends ParserGoBaseVisitor<Node> {
         return switch (text) {
             case "-", "+" -> NodeType.NUMBER;
             case "&&", "||", "bool" -> NodeType.BOOL;
-            case "int" -> NodeType.INT;
-            case "float" -> NodeType.FLOAT;
+            case "int" -> NodeType.NUMBER;
+            case "float64" -> NodeType.NUMBER;
             case "string" -> NodeType.STRING;
-            default -> null;
+            default -> NodeType.STRING;
         };
     }
     //methode von stack overflow
